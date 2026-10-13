@@ -1,0 +1,67 @@
+.book-card {
+  background: #ffffff;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.book-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+}
+
+.book-card.popular-book {
+  border-color: #f1c40f;
+  background-color: #fef9e7;
+}
+
+.book-card.unavailable-book {
+  border-color: #cbd5e1;
+  background-color: #f8fafc;
+  opacity: 0.85;
+}
+
+.book-info p {
+  margin: 6px 0;
+  font-size: 0.95rem;
+  color: #2f3640;
+}
+
+.book-id {
+  font-size: 0.8rem;
+  color: #718093;
+}
+
+.book-notices {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.notice-recomand {
+  font-size: 0.82rem;
+  background-color: #e3f2fd;
+  color: #0288d1;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-weight: 600;
+  text-align: center;
+  margin: 0;
+}
+
+.notice-unavailable {
+  font-size: 0.82rem;
+  background-color: #ffebee;
+  color: #c62828;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-weight: 600;
+  text-align: center;
+  margin: 0;
+}
